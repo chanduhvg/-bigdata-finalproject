@@ -71,7 +71,7 @@ wordCountRDD = keyValueRDD.reduceByKey(lambda acc, value: acc+value)
 OliverTwistResults = wordCountRDD.map(lambda x: (x[1], x[0])).sortByKey(False).take(10)
 print(OliverTwistResults)
 ```
-![result](https://github.com/alekhyajaddu/bigdata-finalproject/blob/main/top15.JPG?raw=true)
+![result](https://github.com/chanduhvg/bigdata-finalproject/commit/52ce655f3df537c55588993efc10bb6ad9f1b00a)
 
 ## Charting
 * We will be using Pandas, MatPlotLib, and Seaborn to visualize.
@@ -89,7 +89,7 @@ df = pd.DataFrame.from_records(OliverTwistResults, columns =[xlabel, ylabel])
 plt.figure(figsize=(10,5))
 sns.barplot(xlabel, ylabel, data=df, palette="husl").set_title(title)
 ```
-![wordCount](https://github.com/alekhyajaddu/bigdata-finalproject/blob/main/wordcountChart.JPG?raw=true)
+![wordCount]()
 
 # WordCloud
 * To create a wordcloud, we will be needing nltk and wordcloud libraries.
@@ -145,7 +145,7 @@ wordcloud_generator.create_word_cloud(clean_data)
 
 ```
 
-![wordCloud](https://github.com/alekhyajaddu/bigdata-finalproject/blob/main/wordCloud.JPG?raw=true)
+![wordCloud](https://github.com/chanduhvg/bigdata-finalproject/blob/main/wordcloudbigdata.JPG)
 
 # References
 * https://github.com/sudheera96/pyspark-textprocessing
