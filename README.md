@@ -71,7 +71,6 @@ wordCountRDD = keyValueRDD.reduceByKey(lambda acc, value: acc+value)
 OliverTwistResults = wordCountRDD.map(lambda x: (x[1], x[0])).sortByKey(False).take(10)
 print(OliverTwistResults)
 ```
-![result](https://github.com/chanduhvg/bigdata-finalproject/blob/main/chartbigdata.JPG?raw=true)
 
 ## Charting
 * We will be using Pandas, MatPlotLib, and Seaborn to visualize.
