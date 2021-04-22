@@ -88,7 +88,7 @@ df = pd.DataFrame.from_records(OliverTwistResults, columns =[xlabel, ylabel])
 plt.figure(figsize=(10,5))
 sns.barplot(xlabel, ylabel, data=df, palette="husl").set_title(title)
 ```
-![wordCount](https://github.com/chanduhvg/bigdata-finalproject/blob/main/wordcloudbigdata.JPG?raw=true)
+![wordCount](https://github.com/chanduhvg/bigdata-finalproject/blob/main/chartbigdata.JPG?raw=true)
 
 # WordCloud
 * To create a wordcloud, we will be needing nltk and wordcloud libraries.
